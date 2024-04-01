@@ -1,1 +1,0 @@
--Desenvolver uma tela de Login utilizando o React.
