@@ -1,21 +1,17 @@
-import { Button, View,} from "react-native";
+import { View,} from "react-native";
 import LoginScreen from "./LoginScreen";
 import SubContainer from "./Sub_container";
 import { StyleSheet } from "react-native";
 
-const Home = function({navigation}){
+
+const Home = function(){
     return(
 
        <View style={styles.Screen} >
         <LoginScreen/>
         <SubContainer/>
-       <View >
-        <Button style={styles.Botao} 
-        title="Teste"
-        onPress={() => navigation.navigate('About') }
-        />
        </View>
-    </View>
+    
     )
 }
 
