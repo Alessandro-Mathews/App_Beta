@@ -1,16 +1,13 @@
-import { View, Pressable, StyleSheet, Text, Button } from "react-native"
+import { View, Pressable, StyleSheet, Text} from "react-native"
+import { useNavigation } from "@react-navigation/native";
 
-
-const SubContainer = function({navigation}){
+const SubContainer = function(){
+  const navigation = useNavigation()
     return(
 
         <View style={styles.subContainer} >
-      <Pressable  style={styles.subButton}> <Text style={styles.textSubButton} >Esqueci a senha</Text></Pressable>
+      <Pressable onPress={() => navigation.navigate('Sobre') }  style={styles.subButton}> <Text style={styles.textSubButton} >Sobre</Text></Pressable>
       <Pressable style={styles.subButton} ><Text style={styles.textSubButton}>Novo usuário</Text>  </Pressable>
-        <Button style={styles.Botao} 
-      title="Botão"
-      onPress={() => navigation.navigate('Sobre') }
-      />
       </View>
       
     )
@@ -23,11 +20,11 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         width: '80%',
         justifyContent: 'center',
-        padding: 10,
+        padding: 20,
         gap: 50,
       }
     ,subButton: {
-      padding: 10,
+      padding: 25,
     }
     ,textSubButton: {
       color: '#B0E0E6',
