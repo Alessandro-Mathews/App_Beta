@@ -1,7 +1,8 @@
 #Projeto de Tela de Login básica.
 
- Utilizou-se:
+Com o foco em aprendizagem em:
+
  -JavaScript;
- -ReactNative;
- -ReactNavigation.
+ ReactNative;
+ ReactNavigation.
 
