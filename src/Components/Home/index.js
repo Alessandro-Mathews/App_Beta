@@ -1,4 +1,4 @@
-import { View,} from "react-native";
+import { ImageBackground, View,} from "react-native";
 import LoginScreen from "./LoginScreen";
 import SubContainer from "./Sub_container";
 import { StyleSheet } from "react-native";
@@ -6,12 +6,16 @@ import { StyleSheet } from "react-native";
 
 const Home = function(){
     return(
-       <View style={styles.Screen} >
-        <View>
-        <LoginScreen/>
-        <SubContainer/>
-       </View>
-       </View>
+         <View style={styles.Screen}>
+            <ImageBackground style={styles.imagem}
+                    source={require("../../../assets/Welcome-bg.png")}
+            />
+            <View >
+            <LoginScreen />
+            <SubContainer />
+            </View>
+        </View>
+       
     
     )
 }
@@ -19,11 +23,15 @@ const Home = function(){
 export default Home;
 
 const styles = StyleSheet.create({
-    Screen: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
+    Screen:{
+        justifyContent: 'center',
+        alignItems: 'center',
     },
+    imagem:{
+        flex: 1,
+        resizeMode: 'cover',
+        width: '100%',
+    }
 });
 
 

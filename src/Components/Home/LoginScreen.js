@@ -3,12 +3,13 @@ import { Text, View, StyleSheet, TextInput, Pressable } from "react-native"
 const LoginScreen = function (){
     return(
         <View style={styles.Formtela} >
-        <Text style={styles.FormTitlle} >Login no Sistema(v_Beta)</Text>
+        <Text style={styles.FormTitlle} >ViaSegura</Text>
+        <Text style={styles.FormTitlle} >Login</Text>
       <TextInput style={styles.FormInput}
-        placeholder="Informe o e-mail" 
+        placeholder="Nome do usuário" 
        />
       <TextInput style={styles.FormInput}
-      placeholder="Informe a senha"
+      placeholder="Senha"
       />
       <Pressable style={styles.FormButton} >
         <Text style={styles.textButton}>Logar</Text>
@@ -22,27 +23,28 @@ const styles = StyleSheet.create({
     FormTitlle: {
         flexDirection: "column",
         fontSize: 36,
-        color: '#B0E0E6',
+        color: '#fff',
         margin: 10,
       },
       FormInput: {
-        borderColor: '#B0E0E6',
+        borderColor: '#708090',
         borderWidth: 1,
         borderRadius: 10,
         fontSize:22,
         padding: 5,
         margin: 10,
+        color:'#fff'
       }
       ,FormButton:{
-        backgroundColor: '#B0E0E6',
         margin: 10,
         padding: 5,
         borderWidth: 1,
         borderRadius: 10,
+        borderColor: '#708090',
         alignItems: 'center',
       },
       textButton: {
-        color: 'white',
+        color: '#fff',
         fontSize: 20,
         fontWeight: 20,
       },

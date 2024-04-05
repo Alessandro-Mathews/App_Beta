@@ -7,7 +7,7 @@ const SubContainer = function(){
 
         <View style={styles.subContainer} >
       <Pressable onPress={() => navigation.navigate('Sobre') }  style={styles.subButton}> <Text style={styles.textSubButton} >Sobre</Text></Pressable>
-      <Pressable style={styles.subButton} ><Text style={styles.textSubButton}>Novo usuário</Text>  </Pressable>
+      <Pressable onPress={() => navigation.navigate('Registre-se')} style={styles.subButton} ><Text style={styles.textSubButton}>Novo usuário</Text>  </Pressable>
       </View>
       
     )
@@ -27,6 +27,6 @@ const styles = StyleSheet.create({
       padding: 25,
     }
     ,textSubButton: {
-      color: '#B0E0E6',
+      color: '#fff',
     }
 });
