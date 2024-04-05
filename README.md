@@ -1,6 +1,7 @@
--Projeto de Tela de Login básica.
+#Projeto de Tela de Login básica.
+
 Utilizou-se:
-JavaScript;
-ReactNative;
-ReactNavigation.
+-JavaScript;
+-ReactNative;
+-ReactNavigation.
 
